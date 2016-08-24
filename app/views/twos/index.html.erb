@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Twos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>X</th>
+      <th>Y</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @twos.each do |two| %>
+      <tr>
+        <td><%= two.x %></td>
+        <td><%= two.y %></td>
+        <td><%= link_to 'Show', two %></td>
+        <td><%= link_to 'Edit', edit_two_path(two) %></td>
+        <td><%= link_to 'Destroy', two, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Two', new_two_path %>

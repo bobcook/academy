@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>X:</strong>
+  <%= @two.x %>
+</p>
+
+<p>
+  <strong>Y:</strong>
+  <%= @two.y %>
+</p>
+
+<p>
+  <strong>Sum</strong>
+  <%= @two.x + @two.y %>
+</p>
+
+<%= link_to 'Edit', edit_two_path(@two) %> |
+<%= link_to 'Back', twos_path %>
