@@ -61,6 +61,21 @@ class TwosController < ApplicationController
     end
   end
 
+  def add
+    Add.new(two_params)
+    @answer = @x+@y
+  end
+
+  def subtract
+    Subtract.new(two_params)
+    @answer = @x-@y
+  end
+
+  def multiply
+    Multiply.new(two_params)
+    @answer = @x*@y
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_two

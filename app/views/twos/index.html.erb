@@ -19,6 +19,9 @@
         <td><%= link_to 'Show', two %></td>
         <td><%= link_to 'Edit', edit_two_path(two) %></td>
         <td><%= link_to 'Destroy', two, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Add Class', two_add_path(:two), method: 'add' %></td>
+        <td><%= link_to 'Subtract Class', two_subtract_path(:two), method: 'subtract'%></td>
+        <td><%= link_to 'Multiply Class', two_multiply_path(:two), method: 'multiply' %></td>
       </tr>
     <% end %>
   </tbody>
